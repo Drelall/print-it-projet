@@ -53,9 +53,6 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-body {
-
-}
 section {
 	margin-block: 6em;
 }
@@ -103,6 +100,32 @@ header {
 .devis {
 	background-color: var(--secondary-color);
 }
+/******css-carousel******/
+.carousel{
+   	position: relative;
+}
+.carousel button {
+    position: absolute;
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 2.6rem;
+    z-index: 2;
+    cursor: pointer;
+    color: white;
+    /* Ajoute ceci pour centrer verticalement */
+    top: 12%;
+    left: 0;
+    transform: translateY(-50%);
+}
+#prev {
+	left: 1rem;
+}
+#next {
+    right: -86rem;
+}
+
+/******fin- css-carousel******/
 
 #banner {
 	display: flex;
