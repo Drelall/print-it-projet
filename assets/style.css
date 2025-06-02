@@ -100,32 +100,61 @@ header {
 .devis {
 	background-color: var(--secondary-color);
 }
-/******css-carousel******/
-.carousel{
-   	position: relative;
+/******!css-carousel******/
+/***** Code CSS en prévision de l'ajout d'un carousel pour la bannière */
+/**** Gestion du container principal du carrousel */
+#banner {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	min-height: 470px;
+	position: relative;
 }
-.carousel button {
-    position: absolute;
-    background: none;
-    border: none;
-    outline: none;
-    font-size: 2.6rem;
-    z-index: 2;
-    cursor: pointer;
-    color: white;
-    /* Ajoute ceci pour centrer verticalement */
-    top: 12%;
-    left: 0;
-    transform: translateY(-50%);
+/**** Gestion des images du carrousel *****/
+.banner-img {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	object-fit: cover;
+	object-position: center;
 }
-#prev {
-	left: 1rem;
+/****** Gestion des fleches pour les boutons du carrousel */
+#banner .arrow {
+	position: absolute;
+	border: none;
+	background: none;
+	outline: none;
 }
-#next {
-    right: -86rem;
+#banner .arrow_left {
+	left: 10px;
+}
+#banner .arrow_right {
+	right: 10px;
+}
+/***** Gestion des points indicateurs du carrousel */
+.dots {
+	position: absolute;
+	bottom: 40px;
+	display: flex;
+}
+.dot {
+	margin-inline: 5px;
+	width: 13px;
+	height: 13px;
+	background-color: #ffffff00;
+	border: 3px solid #fff;
+	border-radius: 100%;
+	box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);;
+}
+.dot_selected {
+	background-color: #fff;
 }
 
-/******fin- css-carousel******/
+
+/******!fin- css-carousel******/
 
 #banner {
 	display: flex;
