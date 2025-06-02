@@ -1,4 +1,4 @@
-const slides = [
+const slides = [ //le texte de chaque image
 	{
 		"image":"slide1.jpg",
 		"tagLine":"Impressions tous formats <span>en boutique et en ligne</span>"
@@ -16,7 +16,7 @@ const slides = [
 		"tagLine":"Autocollants <span>avec découpe laser sur mesure</span>"
 	}
 ];
-const bannerImg = document.querySelector('.banner-img');
+const carouselImg = document.querySelector('.carousel-img');
 const arrowLeft = document.querySelector('.arrow_left');
 const arrowRight = document.querySelector('.arrow_right');
 const dots = document.querySelectorAll('.dot'); // Sélectionnez tous les points
@@ -45,8 +45,8 @@ function updateCarousel(index, direction) {
 
     // Mettre à jour l'image
     const imagePath = `assets/images/slideshow/${slides[currentIndex].image}`;
-    bannerImg.src = imagePath;
-    bannerImg.alt = `Slide ${currentIndex + 1}`;
+    carouselImg.src = imagePath;
+    carouselImg.alt = `Slide ${currentIndex + 1}`;
 
     // Mettre à jour le texte
     const tagLine = slides[currentIndex].tagLine;
