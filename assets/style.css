@@ -135,7 +135,7 @@ header {
 	right: 10px;
 }
 /***** Gestion des points indicateurs du carrousel */
-.dots {
+.points {
 	position: absolute;
 	bottom: 40px;
 	display: flex;
@@ -185,7 +185,7 @@ header {
 	right: 10px;
 }
 /* Gestion des points du carrousel */
-.dots {
+.points {
 	position: absolute;
 	bottom: 40px;
 	display: flex;

@@ -19,13 +19,13 @@ const slides = [ //le texte de chaque image
 const carouselImg = document.querySelector('.carousel-img');
 const arrowLeft = document.querySelector('.arrow_left');
 const arrowRight = document.querySelector('.arrow_right');
-const dots = document.querySelectorAll('.dot'); // Sélectionnez tous les points
+const points = document.querySelectorAll('.dot'); // Sélectionnez tous les points
 
 let currentIndex = 0;
 
 // Fonction pour mettre à jour les points indicateurs
-function updateDots(index) {
-    dots.forEach((dot, i) => {
+function updatePoints(index) {
+    points.forEach((dot, i) => {
         if (i === index) {
             dot.classList.add('dot_selected'); // Ajoutez la classe pour le point actuel
         } else {
@@ -59,18 +59,18 @@ function updateCarousel(index, direction) {
 arrowLeft.addEventListener('click', function () {
     currentIndex = (currentIndex - 1);
     updateCarousel(currentIndex, 'left');
-    updateDots(currentIndex); // Mettez à jour les points indicateurs
+    updatePoints(currentIndex); // Mettez à jour les points indicateurs
 });
 
 // Gestionnaire d'événement pour le clic sur la flèche droite
 arrowRight.addEventListener('click', function () {
     currentIndex = (currentIndex + 1) ;
     updateCarousel(currentIndex, 'right');
-    updateDots(currentIndex); // Mettez à jour les points indicateurs
+    updatePoints(currentIndex); // Mettez à jour les points indicateurs
 });
 
 
 // Afficher la première diapositive au chargement de la page
 updateCarousel(currentIndex, 'démarrage');
-updateDots(currentIndex); // Mettez à jour les points indicateurs pour la première diapositive
+updatePoints(currentIndex); // Mettez à jour les points indicateurs pour la première diapositive
 
