@@ -101,29 +101,28 @@ header {
 	background-color: var(--secondary-color);
 }
 /******!css-carousel******/
-/***** Code CSS en prévision de l'ajout d'un carousel pour la bannière */
-/**** Gestion du container principal du carrousel */
+/****Gestion du container principal du carrousel****/
 #carousel {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	width: 100%;
-	min-height: 470px;
-	position: relative;
+	width: 100%;/* Prend toute la largeur disponible */
+	min-height: 470px;/* Hauteur minimale du carrousel */
+	position: relative;/* Positionne les éléments enfants en absolu par rapport à ce conteneur */
 }
-/**** Gestion des images du carrousel *****/
+/****Gestion des images du carrousel****/
 .carousel-img {
-	position: absolute;
+	position: absolute;/* Positionne chaque image par rapport au conteneur */
 	width: 100%;
 	height: 100%;
 	z-index: -1;
 	object-fit: cover;
 	object-position: center;
 }
-/****** Gestion des fleches pour les boutons du carrousel */
+/****Gestion des fleches pour les boutons du carrousel****/
 #carousel .arrow {
-	position: absolute;
+	position: absolute;/* Positionne chaque image par rapport au conteneur */
 	border: none;
 	background: none;
 	outline: none;
@@ -134,14 +133,14 @@ header {
 #carousel .arrow_right {
 	right: 10px;
 }
-/***** Gestion des points indicateurs du carrousel */
+/****Gestion des points indicateurs du carrousel****/
 .points {
-	position: absolute;
+	position: absolute;/* Positionne chaque image par rapport au conteneur */
 	bottom: 40px;
 	display: flex;
 }
 .dot {
-	margin-inline: 5px;
+	margin-inline: 5px;/* Marge horizontale de 5px de chaque côté */
 	width: 13px;
 	height: 13px;
 	background-color: #ffffff00;
@@ -150,10 +149,8 @@ header {
 	box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);;
 }
 .dot_selected {
-	background-color: #fff;
+	background-color: #fff;/* Fond blanc pour le point sélectionné */
 }
-
-
 /******!fin- css-carousel******/
 
 #carousel {
