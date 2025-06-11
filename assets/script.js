@@ -16,8 +16,23 @@ const slides = [
 	{
 		"image":"slide4.png",
 		"tagLine":"Autocollants <span>avec découpe laser sur mesure</span>"
-	}
+	},
 ];
+
+//points dynamique du carrousel
+
+const pointscontainer = document.querySelector('.points');
+
+function generatePoints() {
+  slides.forEach(() => {
+    const dot = document.createElement('div');
+    dot.className = 'dot'; // Pas de texte à l'intérieur
+    pointscontainer.appendChild(dot);
+  });
+}
+
+generatePoints();
+
 // Sélection des éléments du "DOM", le Dom transforme les balises en objets manipulables Javascript
 
 const carouselImg = document.querySelector('.carousel-img');//image principale du caroussel
