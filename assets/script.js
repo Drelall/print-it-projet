@@ -26,7 +26,7 @@ const pointscontainer = document.querySelector('.points');
 function generatePoints() {
   slides.forEach(() => {
     const dot = document.createElement('div');
-    dot.className = 'dot'; // Pas de texte à l'intérieur
+    dot.className = 'dot';
     pointscontainer.appendChild(dot);
   });
 }
